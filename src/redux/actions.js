@@ -1,4 +1,2 @@
-export const conditionChanged = (condition) => ({
-    type:'CONDITION_CHANGED',
-    payload: { condition }
-});
+import { createAction } from '@reduxjs/toolkit'; 
+export const conditionChanged = createAction('CONDITION_CHANGED');
