@@ -13,16 +13,3 @@ export default createReducer(defaultState, (builder) => {
         state.condition = action.payload
     })
 });
-
-/*(state = defaultState, { type, payload }) => {
-    //const retState = state.condition ? state : { ...state, condition: defaultCondition };
-    switch (type) {
-        case 'CONDITION_CHANGED':
-            return {
-                ...state,
-                condition: payload.condition
-            }
-        default:
-            return state;
-    }
-}*/
